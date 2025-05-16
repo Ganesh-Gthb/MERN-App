@@ -18,7 +18,7 @@ services:
     # the first number is the port on the host machine
     # the second number is the port inside the container
     ports:
-      - 5173:5173
+      - 5174:5173
     # specify the environment variables for the web service
     # these environment variables will be available inside the container
     environment:
@@ -52,7 +52,7 @@ services:
     # the first number is the port on the host machine
     # the second number is the port inside the container
     ports: 
-      - 8000:8000
+      - 8001:8000
 
     # specify environment variables for the api service
     # for demo purposes, we're using a local mongodb instance
@@ -86,7 +86,7 @@ services:
     # generally, we do this in api service using mongodb atlas. But for demo purposes, we're using a local mongodb instance
     # usually, mongodb runs on port 27017. So we're exposing the port 27017 on the host machine and mapping it to the port 27017 inside the container
     ports:
-      - 27017:27017
+      - 27018:27017
 
     # specify the volumes to mount for the db service
     # we're mounting the volume named "anime" inside the container at /data/db directory
