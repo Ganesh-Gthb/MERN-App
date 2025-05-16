@@ -15,8 +15,7 @@ pipeline {
                         sh '''
                             sonar-scanner \
                               -Dsonar.projectKey=$SONAR_PROJECT_KEY \
-                              -Dsonar.sources=backend \
-                              -Dsonar.branch.name=${BRANCH_NAME}
+                              -Dsonar.sources=backend
                         '''
                     }
                 }
